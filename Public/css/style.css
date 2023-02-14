@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--grisClaro);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  width: 100% !important;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  /* border: 3px solid green; */
+  background-color: var(--amarillo);
+  flex-direction: column;
+}
+
+/************ HEADER ****************** */
+
+/**LOGO BARRA LUPA PAGO TARJETA */
+.logo-container {
+  /* border: 3px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+
+/**MENU HAMBURGUEZA */
+.burger-container {
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: center;
+}
+
+/**MENU NAVEGACION */
+.menu-container {
+  /* border: 3px solid red; */
+  display: none;
+}
+
+.logo-bar-container {
+  /* border: 3px solid gray; */
+  display: flex;
+}
+
+.card-container {
+  /* border: 3px solid gray; */
+  padding: 15px;
+}
+
+.logo {
+  /* border: 3px solid pink; */
+  width: 50%;
+  padding: 10px;
+}
+
+.search-button-container {
+  display: flex;
+  /* border: 3px solid pink; */
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  /* border: 3px solid brown;  */
+  display: flex;
+  height: 25px;
+  width: 90%;
+}
+
+.card-title {
+  font-weight: 400;
+  text-align: center;
+}
+
+.card-title i {
+  margin-right: 10px;
+}
+
+input {
+  width: 95%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+button {
+  width: 15%;
+  padding: 1px;
+  border: none;
+  background-color: var(--blanco);
+  border-radius: 0 5px 5px 0;
+}
+
+.burger-menu {
+  display: flex;
+  /* border: 1px solid black;  */
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 5px;
+  color: var(--blanco);
+  background-color: var(--azul);
+}
+
+/************ FIN HEADER ***************/
+
+
+/************ PRODUCTOS ****************/
+
+main h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.last-visit,
+.offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.last-visit .products {
+  width: 95%;
+}
+
+.products article {
+  background: var(--blanco);
+  padding: 10px 0;
+}
+
+main section article i {
+  color: var(--verde);
+  border: 1px solid var(--verde);
+  background: var(--blanco);
+  border-radius: 50%;
+  padding: 8px;
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+}
+
+.main-article {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 10px;
+  border-top: 1px solid var(--grisClaro);
+}
+
+.price {
+  font-size: 18px;
+  width: 30%;
+}
+
+.discount {
+  width: 70%;
+  color: var(--verde);
+}
+
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description {
+  color: var(--grisOscuro);
+}
+
+main section article {
+  margin-bottom: 15px;
+}
+
+.offers .products {
+  width: 95%;
+}
+
+main section div.products article i {
+  transition: transform 1s;
+}
+
+main section div.products article:hover i{
+  transform: rotate(-90deg);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+footer h3, p {
+  margin: 0;
+  padding: 0;
+}
+footer section {
+  color: var(--grisOscuro);
+  padding: 15px;
+}
+footer .body-pie {
+  font-size: 12px;
+}
+
+footer .icon-footer {
+  font-size: 2em;
+  color: var(--celeste);
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+
+footer .icon-footer:hover {
+  color: var(--amarillo);
+  /* transform: rotateY(180deg); */
+  transition: all 0.4s ease-in;
+}
+
+footer .icon-footer:hover i {
+  transform: rotateY(180deg);
+  transition: all 0.4s ease-in;
+}
+
+footer .icon-footer:not(:hover) i {
+  transform: rotateY(0deg);
+  transition: all 0.4s ease-in;
+}
+
+footer .pie-footer {
+  text-align-last: left;
+  margin-top: 10px;
+}

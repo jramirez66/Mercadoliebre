@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tipografia Roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Libreria Fontawesome-->
+    <script src="https://kit.fontawesome.com/439c181295.js" crossorigin="anonymous"></script>
+
+    <!-- Estilos propios-->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/colors.css" rel="stylesheet">
+    <link href="/css/buttonStyles.css" rel="stylesheet">
+    <link href="/css/register.css" rel="stylesheet">
+    <link href="/css/mediaQueryStyle.css" rel="stylesheet">
+
+    <title>Mercado Libre</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-bar-container">
+                <div class="logo">
+                    <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="Logo"></a>
+                </div>
+                <div class="search-button-container">
+                    <div class="search-container">
+                        <input type="text" placeholder="Buscar productos, marcas...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <h2 class="card-title"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito
+                </h2>
+            </div>
+        </div>
+        <div class="menu-container">
+            <ul>
+                <li>Ofertas</li>
+                <li>Tiendas Oficiales</li>
+                <li>Vender</li>
+                <li>Ayuda</li>
+            </ul>
+            <ul>
+                <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li>Mis Compras <i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </div>
+        <div class="burger-container">
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <img src="images/img-home-banner.jpg" alt="banner de oferta">
+    </section>
+    <main>
+        <div class="register-card-body">
+            <p class="register-box-msg">Registrarse</p>
+
+            <form action="/registro" method="POST">
+    
+                <div class="row">
+                    <div class="row-user">
+                        <div class="form-group">
+                            <label for="username">Usuario</label>
+                            <input style="font-family: 'Font Awesome 5 Free'; font-weight: 600;" type="text" name="username" class="form-control users" id="username" placeholder=" &#xf007;  Ingrese usuario" maxlength="20" minlength="5" required>
+                        </div>
+                    </div>
+                    <div class="row-data">
+                        <div class="row-data1">
+                            <div class="form-group">
+                                <label for="pass">Contraseña</label>
+                                <input style="font-family: 'Font Awesome 5 Free'; font-weight: 600;" type="password" name="pass" class="form-control" id="pass" placeholder=" &#xf084;  Ingrese contraseña" minlength="5" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Nombre y Apellido</label>
+                                <input style="font-family: 'Font Awesome 5 Free'; font-weight: 600;" type="text" name="lastname" class="form-control" id="lastname" placeholder=" &#xf2c2;  Nombre y Apellido" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="birth">Fecha Nacimiento</label>
+                                <input style="font-family: 'Font Awesome 5 Free'; font-weight: 600;" type="date" name="birth" class="form-control" id="birth" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Domicilio</label>
+                                <input style="font-family: 'Font Awesome 5 Free'; font-weight: 600;" type="text" name="address" class="form-control" id="address" placeholder=" &#xe065;  Ingrese domicilio" required>
+                            </div>
+                            <div class="form-group buyCell">
+                                <div class="label-group">
+                                    <label for="perfil">Perfil</label>
+                                </div>
+                                <div class="buyCell-Group">
+                                    <input class="input-cell" type="radio" id="comprador" name="perfil" value="comprador" checked>
+                                    <label for="comprador">Comprador</label>
+                                    <input class="input-cell" type="radio" id="vendedor" name="perfil" value="vendedor">
+                                    <label for="vendedor">Vendedor</label><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-data2">
+                            <div class="form-group">
+                                <label for="pass2">Repetir Contraseña</label>
+                                <input style="font-family: 'Font Awesome 5 Free'; font-weight: 600;" type="password" name="pass2" class="form-control" id="pass2" placeholder=" &#xf084;  Repita contraseña" minlength="5" required>
+                            </div>
+                            <div class="form-group category">
+                                <div class="label-group">
+                                    <label for="categories">Categorías de interés</label>
+                                </div>
+                                <div class="category-Group">
+                                    <div class="groupCategory">
+                                        <input type="checkbox" name="categories" value="electro"><label>Electro</label> 
+                                    </div>
+                                    <div class="groupCategory">
+                                        <input type="checkbox" name="categories" value="moda"><label>Moda</label>
+                                    </div>
+                                    <div class="groupCategory">
+                                        <input type="checkbox" name="categories" value="hogar"><label>Hogar</label>
+                                    </div>
+                                    <div class="groupCategory">
+                                        <input type="checkbox" name="categories" value="jugueteria"><label>Juguetería</label>
+                                    </div>
+                                    <div class="groupCategory">
+                                        <input type="checkbox" name="categories" value="vidasana"><label>Vida sana</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="fotouser">Foto usuario</label>
+                                <input type="file" name="fotouser" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-button">
+                        <div class="row-button-box">
+                            <button type="submit" class="ov-btn-grow-spin">
+                                <i class="fas fa-share-square"></i> Enviar
+                            </button>
+                            <button type="reset" class="ov-btn-grow-box">
+                                <i class="fas fa-broom"></i> Limpiar
+                            </button>
+
+                            <!-- <button class="ov-btn-grow-spin">BTN SLIDE LEFT</button> -->
+
+                        </div>
+                    </div>
+                </div>
+    
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <section>
+                <span class="icon-footer"><i class="fas fa-credit-card"></i></span>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p class="body-pie">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section>
+                <span class="icon-footer"><i class="fas fa-gift"></i></span>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p class="body-pie">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section>
+                <span class="icon-footer"><i class="fas fa-user-shield"></i></span>
+                <h3>Seguridad, de principio a fin</h3>
+                <p class="body-pie">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </section>
+        </div>
+        <section class="pie-footer">
+            <p class="body-pie">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+    </footer>
+</body>
+
+</html>

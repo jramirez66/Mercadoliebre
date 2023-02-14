@@ -1,0 +1,70 @@
+/*** ESTILOS BOTÓN GROW SPIN ***/
+.ov-btn-grow-spin {
+    background: #fff; /* color de fondo */
+    color: #283618; /* color de fuente */
+    border: 2px solid #283618; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ov-btn-grow-spin:hover {
+    color: #fff;/* color de fuente hover */
+}
+
+.ov-btn-grow-spin::after {
+    content: "";
+    background: #283618; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+    transition: all 0.3s ease;
+}
+
+.ov-btn-grow-spin:hover::after {
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1) rotate(0deg);
+}
+
+/*** ESTILOS BOTÓN GROW BOX ***/
+.ov-btn-grow-box {
+    background: #fff; /* color de fondo */
+    color: #9c0123; /* color de fuente */
+    border: 2px solid #9c0123; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    }
+    .ov-btn-grow-box:hover {
+    color: #fff;/* color de fuente hover */
+    }
+    .ov-btn-grow-box::after {
+    content: "";
+    background: #9c0123; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+    transition: all 0.3s ease;
+    }
+    .ov-btn-grow-box:hover::after {
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1);
+    }

@@ -1,0 +1,137 @@
+/* Tablet */
+@media (min-width: 768px) {
+
+    .logo-container {
+        flex-direction: row;
+    }
+
+    .logo-bar-container {
+        width: 50%;
+    }
+
+    .card-container {
+        display: flex;
+        width: 50%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container h2 {
+        font-size: 16px;
+    }
+
+    .burger-container {
+        display: none;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    ul {
+        /* border: 3px solid orange; */
+        display: flex;
+        width: 45%;
+        justify-content: space-between;
+    }
+
+
+    /******* Productos *******/
+    .last-visit,
+    .offers {
+        height: 860px;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .products article {
+        width: 49%;
+    }
+
+    main section div article {
+        /* height: 410px; */
+        height: 26em;
+        transition: all 0.4s ease-in;
+    }
+
+    .main-article h4 {
+        position: relative;
+        bottom: 40px;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.4s ease-in;
+    }
+
+    main section div article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        /* height: 430px; */
+        height: 27em;
+    }
+
+    main section div article:hover .main-article h4 {
+        position: relative;
+        bottom: 0;
+        z-index: 1;
+        opacity: 1;
+    }
+
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .last-visit,
+    .offers {
+        height: 295px;
+    }
+
+    .card-container h2 {
+        font-size: 22px;
+    }
+
+    .products article {
+        width: 24%;
+    }
+
+    .price,
+    .discount {
+        font-size: 14px;
+    }
+
+    main section div article {
+        /* height: 280px; */
+        height: 18em;
+    }
+
+    main section div article:hover {
+        /* height: 300px; */
+        height: 19em;
+    }
+
+    footer div {
+        display: flex;
+    }
+}
+
+/* TV hasta 1366 */
+@media (min-width: 1200px) {
+    .last-visit,
+    .offers {
+        height: 380px;
+    }
+    main section div article {
+        /* height: 430px; */
+        height: 22.5em;
+    }
+
+    main section div article:hover {
+        /* height: 300px; */
+        height: 24em;
+    }
+}
